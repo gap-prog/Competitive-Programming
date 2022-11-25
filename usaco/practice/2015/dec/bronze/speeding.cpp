@@ -1,3 +1,5 @@
+// USACO Problem Link: http://usaco.org/index.php?page=viewproblem2&cpid=568
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

@@ -1,3 +1,5 @@
+# USACO Problem Link: http://usaco.org/index.php?page=viewproblem2&cpid=665
+
 fin = open('cowsignal.in', 'r')
 m, n, k = map(int, fin.readline().split())
 s = ''
