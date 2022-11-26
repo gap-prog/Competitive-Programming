@@ -1,3 +1,5 @@
+// LeetCode Problem Link: https://leetcode.com/problems/longest-common-prefix/
+
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
