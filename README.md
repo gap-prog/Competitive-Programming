@@ -5,7 +5,7 @@ Competitive Programming Problem Solutions
 ## Profiles
 
 <div style="display: flex; justify-content: center; align-items: center">
-  <a href="https://github.com/wcpss-gp/">
+  <a href="https://github.com/gap-prog">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" width=50 height=50>
   </a>
   <a href="http://usaco.org/" target="_blank">
