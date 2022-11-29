@@ -10,9 +10,9 @@ int main() {
     cin >> n;
     vector<int> arr;
     for (int i = 0; i < n; i++) {
-        int n;
-        cin >> n;
-        arr.push_back(n);
+        int num;
+        cin >> num;
+        arr.push_back(num);
     }
     sort(arr.begin(), arr.end());
     for (int i = 0; i < n; i++) {
