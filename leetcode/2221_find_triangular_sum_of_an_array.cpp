@@ -1,3 +1,5 @@
+// LeetCode Problem Link: https://leetcode.com/problems/find-triangular-sum-of-an-array/
+
 class Solution {
   public:
     int triangularSum(vector<int>& nums) {
