@@ -1,3 +1,5 @@
+// USACO Training Problem Link: https://train.usaco.org/usacoprob2?a=6gTcQ5dfibn&S=beads
+
 /*
 ID:
 TASK: beads
