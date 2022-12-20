@@ -2,7 +2,7 @@
 
 Competitive Programming Problem Solutions, Explanations, Tutorials, and more.
 
-**This repository has code that is predominantly in C++. The tutorial section will also be mostly written in C++**
+**The code in all sections of this repository is primarily written in C++.**
 
 ## Profiles
 
