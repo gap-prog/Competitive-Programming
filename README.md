@@ -2,6 +2,8 @@
 
 Competitive Programming Problem Solutions, Explanations, Tutorials, and more.
 
+**This repository has code that is predominantly in C++. The tutorial section will also be mostly written in C++**
+
 ## Profiles
 
 <div style="display: flex; justify-content: center; align-items: center">
