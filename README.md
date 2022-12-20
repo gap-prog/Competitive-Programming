@@ -1,6 +1,6 @@
 # Competitive-Programming
 
-Competitive Programming Problem Solutions
+Competitive Programming Problem Solutions, Explanations, Tutorials, and more.
 
 ## Profiles
 
