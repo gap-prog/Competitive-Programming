@@ -5,7 +5,7 @@ Details
 -------
 STRATEGY: conditionals
 I/O: terminal/stdin
-APPROACH: There are 101 citizens, therefore, for a 50% majority, (int) 101 / 2 = 51 citizens need to vote for a party. Implement conditions to verify the results.
+APPROACH: There are 101 citizens and 51 or more citizens must vote for a party for it to win. Implement conditions to check each party's votes and output the results.
 */
 
 #include <iostream>
