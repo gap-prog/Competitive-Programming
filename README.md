@@ -18,6 +18,13 @@ The Competitive Programming repository contains code solutions to problems from 
 
 The tutorials section is organized by `USACO` rank occurences. Below those, are sub folders that cover data structures, algorithms, and other important facets for that specific rank. There is also a general section where information related to I/O, problem types, etc. can be found.
 
+### Files/Directories To Ignore
+
+Some files and directories are not related to competitive programming and are for general project requirements. Below is a list of such files and directories:
+
+* `.gitignore`
+* `LICENSE`
+
 ## My Profiles
 
 <div style="display: flex; justify-content: center; align-items: center">
