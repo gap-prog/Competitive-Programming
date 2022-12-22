@@ -8,7 +8,7 @@ The Competitive Programming repository contains code solutions to problems from 
 
 ## What Does This Repository Contain?
 
-1. Code solutions (in directories named after coding competition/practice websites e.g. `CodeForces` or `USACO`)
+1. Code solutions (in directories named after coding competition/practice websites e.g. `code_forces` or `usaco`)
 2. Tutorials about different aspects of competitive programming such as `data structures`, `algorithms`, `I/O`, etc.
 3. Tips and guides about competitive programming including other resources.
 
@@ -16,7 +16,15 @@ The Competitive Programming repository contains code solutions to problems from 
 
 **Notice:** This repository is a resource for competitive programming. All parts, especially the tutorials/guides should be read. Attempt problems before looking at the solutions listed in the code section.
 
-The tutorials section is organized by `USACO` rank occurences. Below those, are sub folders that cover data structures, algorithms, and other important facets for that specific rank. There is also a general section where information related to I/O, problem types, etc. can be found.
+The tutorials section has a few components:
+
+*`<name>` designates a folder*
+
+* `usaco`
+  * `bronze`, `silver`, `gold`, `platinum` contain explanations/implementations of topics covered in USACO competitions.
+  * `usaco_training` contains explanations and solutions to USACO Training Pages problems.
+* `solutions` sub-folder contains explanations to select problems from various websites.
+* `theory` sub-folder contains explanations and abstract implementations of topics such as data structures, algorithms, etc.
 
 ### Files/Directories To Ignore
 
