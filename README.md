@@ -1,10 +1,24 @@
 # Competitive-Programming
 
-Competitive Programming Problem Solutions, Explanations, Tutorials, and more.
+## About
+
+The Competitive Programming repository contains code solutions to problems from online sources, tutorials for different aspects of competitive programming, and general guides about competitive programming.
 
 **The code in all sections of this repository is primarily written in C++.**
 
-## Profiles
+## What Does This Repository Contain?
+
+1. Code solutions (in directories named after coding competition/practice websites e.g. `CodeForces` or `USACO`)
+2. Tutorials about different aspects of competitive programming such as `data structures`, `algorithms`, `I/O`, etc.
+3. Tips and guides about competitive programming including other resources.
+
+## How To Use This Repository
+
+**Notice:** This repository is a resource for competitive programming. All parts, especially the tutorials/guides should be read. Attempt problems before looking at the solutions listed in the code section.
+
+The tutorials section is organized by `USACO` rank occurences. Below those, are sub folders that cover data structures, algorithms, and other important facets for that specific rank. There is also a general section where information related to I/O, problem types, etc. can be found.
+
+## My Profiles
 
 <div style="display: flex; justify-content: center; align-items: center">
   <a href="https://github.com/gap-prog">
