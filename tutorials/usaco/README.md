@@ -1,3 +1,3 @@
 # USACO
 
-Tutorials for USACO problems, topics, and strategies.
+Guides for USACO topics and strategies grouped by rank along with USACO Training Pages solutions and explanations.
