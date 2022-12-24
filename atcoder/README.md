@@ -1,3 +1,3 @@
 # AtCoder
 
-Solutions to AtCoder problems
+AtCoder problem solutions
