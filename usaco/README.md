@@ -1,3 +1,3 @@
 # USACO
 
-Solutions to USACO problems
+USACO problem solutions
