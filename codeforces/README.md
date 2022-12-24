@@ -1,3 +1,3 @@
 # CodeForces
 
-Solutions to CodeForces problems
+CodeForces problem solutions
