@@ -1,3 +1,3 @@
 # Competitions
 
-USACO competitions problem solutions
+USACO competition problem solutions
