@@ -1,3 +1,3 @@
 # CodeChef
 
-Solutions to CodeChef Problems
+CodeChef problem solutions
