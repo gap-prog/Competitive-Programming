@@ -53,7 +53,7 @@ Some files and directories are not related to competitive programming and are fo
   <a href="https://leetcode.com/gpprog/">
     <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="LeetCode Logo" width=50 height=50>
   </a>
-  <a href="https://www.codechef.com/users/gpprog">
+  <a href="https://www.codechef.com/users/gapprog">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Codechef%28new%29_logo.svg/1200px-Codechef%28new%29_logo.svg.png" alt="CodeChef Logo" width=150 height=50>
   </a>
   <a href="https://atcoder.jp/users/gpprog">
