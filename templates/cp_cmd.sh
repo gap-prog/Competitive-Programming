@@ -64,5 +64,5 @@ int main() {
 	return 0;
 }
 EOF
-gvim $1
+gvim $1 &
 }
