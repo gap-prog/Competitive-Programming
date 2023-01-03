@@ -66,3 +66,31 @@ int main() {
 EOF
 gvim $1 &
 }
+
+function cpsets() {
+cat << EOF > $1
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define spc " "
+#define nl '\n'
+#define sz(x) ((int) x.size())
+
+void solve() {
+	// Solve
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	int t;
+	cin >> t;
+	while (t--) {
+		solve();
+	}
+}
+EOF
+gvim $1 &
+}
+
