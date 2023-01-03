@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 #define ll long long
 #define nl "\n"
 #define spc " "
@@ -13,4 +14,5 @@ int main() {
 	while (t--) {
 		// Solve
 	}
+	return 0;
 }
