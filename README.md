@@ -59,4 +59,7 @@ Some files and directories are not related to competitive programming and are fo
   <a href="https://atcoder.jp/users/gpprog">
     <img src="https://img.atcoder.jp/assets/atcoder.png" alt="AtCoder" width=50 height=50>
   </a>
+  <a href="https://cses.fi/user/146769">
+   <img src="https://cses.fi/logo.png" alt="CSES" width=120 height=50>
+  </a>
 </div>
