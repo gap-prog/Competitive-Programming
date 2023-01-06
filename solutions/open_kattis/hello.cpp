@@ -3,7 +3,7 @@
 /*
 Details
 -------
-STRATEGY: output a string
+STRATEGY: output
 I/O: terminal/stdin
 APPROACH: output a string
 */
