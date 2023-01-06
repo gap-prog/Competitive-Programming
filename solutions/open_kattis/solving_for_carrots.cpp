@@ -3,7 +3,7 @@
 /*
 Details
 -------
-STRATEGY: output the number of problems solved
+STRATEGY: output
 I/O: terminal/stdin
 APPROACH: realize that the input assigned to variable `p` is the solution
 */
