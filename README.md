@@ -62,4 +62,7 @@ Some files and directories are not related to competitive programming and are fo
   <a href="https://cses.fi/user/146769">
    <img src="https://cses.fi/logo.png" alt="CSES" width=120 height=50>
   </a>
+  <a href="https://open.kattis.com/users/4kvs4xs9">
+   <img src="https://open.kattis.com/images/site-logo?v=50ef049acd5158e8b1df78aea2008ba3" alt="Kattis logo" width=50 height=50>
+  </a>
 </div>
