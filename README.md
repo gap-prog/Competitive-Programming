@@ -41,7 +41,7 @@ Some files and directories are not related to competitive programming and are fo
   <a href="https://github.com/gap-prog">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" width=50 height=50>
   </a>
-  <a href="http://usaco.org/" target="_blank">
+  <a href="http://usaco.org/">
     <img src="https://ioinformatics.org/images/usaco.png" alt="USACO Logo" alt="USACO Logo" width=75 height=50>
   </a>
   <a href="https://codeforces.com/profile/gpprog">
