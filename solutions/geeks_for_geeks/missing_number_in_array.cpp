@@ -3,19 +3,18 @@
 /*
 Details
 -------
-STRATEGY: complete search
+STRATEGY: number theory, complete search
 I/O: problem provided
-APPROACH: sort the array and then check if each element has a successor that is 1 greater than its value
+APPROACH: the sum of the first n numbers is n * (n + 1) / 2. The logic, based on this formula, is to subtract every element in the array from the sum, which would result in the missing number.
 */
 
 class Solution{
   public:
     int MissingNumber(vector<int>& array, int n) {
-        sort(array.begin(), array.end());
+        int total = n * (n + 1) / 2;
         for (int i = 0; i < n - 1; ++i) {
-            if (array[i] != array[i + 1] - 1) {
-                return array[i] + 1;
-            }
+            total -= array[i];
         }
+        return total;
     }
 };
