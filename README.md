@@ -6,7 +6,7 @@
 
 The Competitive Programming repository contains code solutions to problems from online sources, tutorials for different aspects of competitive programming, and general guides about competitive programming.
 
-**The code in all sections of this repository is primarily written in C++.**
+**The code in this repository is primarily written in C++.**
 
 ## What Does This Repository Contain?
 
