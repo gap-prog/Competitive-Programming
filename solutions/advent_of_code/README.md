@@ -1,3 +1,3 @@
 # Advent of Code
 
-Advent of Code Problem Solutions.
+Advent of Code problem solutions.
