@@ -1,3 +1,5 @@
+// USACO Problem Link: http://usaco.org/index.php?page=viewproblem2&cpid=1280
+
 #include <bits/stdc++.h>
 using namespace std;
 

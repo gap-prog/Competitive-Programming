@@ -1,3 +1,9 @@
+// USACO Problem Link: http://usaco.org/index.php?page=viewproblem2&cpid=1278
+
+/*
+Did not pass test cases (for reference)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

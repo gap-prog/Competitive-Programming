@@ -1,3 +1,5 @@
+// USACO Problem Link: http://usaco.org/index.php?page=viewproblem2&cpid=1279
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,7 +18,7 @@ int ft(){
 		if(arr[n][i]==1){
 			arr2[n][i]=arr[n+1][i];
 			res+=arr2[n][i];
-			q.push({n,i});
+			q.push({ n, i });
 		}
 	}
 	while(!q.empty()){
