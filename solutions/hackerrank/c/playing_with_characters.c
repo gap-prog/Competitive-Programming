@@ -1,3 +1,5 @@
+// HackerRank Problem Link: https://www.hackerrank.com/challenges/playing-with-characters/problem
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
