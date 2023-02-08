@@ -1,4 +1,4 @@
-// HackerRank Problem Link: https://www.hackerrank.com/challenges/hello-world-c/problem?isFullScreen=true
+// HackerRank Problem Link: https://www.hackerrank.com/challenges/hello-world-c/problem
 
 #include <stdio.h>
 #include <string.h>
