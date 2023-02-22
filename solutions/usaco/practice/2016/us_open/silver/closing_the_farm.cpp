@@ -1,5 +1,7 @@
 // USACO Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=644
 
+// Editorial Link: https://github.com/gap-prog/Competitive-Programming/blob/main/tutorials/usaco/silver/closing_the_farm.pdf
+
 #include <bits/stdc++.h>
 using namespace std;
 
