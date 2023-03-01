@@ -92,6 +92,6 @@ int main() {
 	return 0;
 }
 EOF
-gvim $1 &
+nvim $1 &
 }
 
