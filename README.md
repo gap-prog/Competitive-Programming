@@ -66,6 +66,6 @@ Some files and directories are not related to competitive programming and are fo
    <img src="https://open.kattis.com/images/site-logo?v=50ef049acd5158e8b1df78aea2008ba3" alt="Kattis logo" width=50 height=50>
   </a>
   <a href="https://www.hackerearth.com/@gpprog">
-   <img src="https://paganresearch.io/images/Hackerearth.jpg" alt="HackerEarth Logo">
+   <img src="https://paganresearch.io/images/Hackerearth.jpg" alt="HackerEarth Logo" width=50 height=50>
   </a>
 </div>
