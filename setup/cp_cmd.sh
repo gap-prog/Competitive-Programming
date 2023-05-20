@@ -64,7 +64,7 @@ int main() {
 	return 0;
 }
 EOF
-nvim $1 &
+gvim $1 &
 }
 
 function cpsets() {
