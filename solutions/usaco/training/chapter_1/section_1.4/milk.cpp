@@ -1,4 +1,4 @@
-// USACO Training Pages Problem Link: https://train.usaco.org/usacoprob2?a=o5GKFbuu1XA&S=barn1
+// USACO Training Pages Problem Link: https://train.usaco.org/usacoprob2?a=o5GKFbuu1XA&S=milk
 
 #include <bits/stdc++.h>
 using namespace std;
