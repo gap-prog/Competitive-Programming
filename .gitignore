@@ -196,3 +196,6 @@ hs_err_pid*
 
 # ==== VIM ====
 *.swp
+
+# ==== JetBrains ====
+.idea/
