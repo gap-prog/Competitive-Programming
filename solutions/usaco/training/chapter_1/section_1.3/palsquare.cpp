@@ -1,11 +1,5 @@
 // USACO Training Problem Link: https://train.usaco.org/usacoprob2?a=6gTcQ5dfibn&S=palsquare
 
-/*
-ID:
-TASK: palsquare
-LANG: C++
-*/
-
 #include <bits/stdc++.h>
 using namespace std;
 

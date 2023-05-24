@@ -1,11 +1,5 @@
 # USACO Training Problem Link: https://train.usaco.org/usacoprob2?a=E2VoASqwGEO&S=friday
 
-"""
-ID:
-LANG: PYTHON3
-TASK: friday
-"""
-
 with open('friday.in', 'r') as fin:
 	N = int(fin.read())
 	fin.close()

@@ -1,11 +1,5 @@
 // USACO Training Problem Link: https://train.usaco.org/usacoprob2?a=6gTcQ5dfibn&S=gift1
 
-/*
-ID:
-TASK: gift1
-LANG: C++                 
-*/
-
 #include <bits/stdc++.h>
 using namespace std;
 
