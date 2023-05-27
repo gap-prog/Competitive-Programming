@@ -199,3 +199,6 @@ hs_err_pid*
 
 # ==== JetBrains ====
 .idea/
+
+# ==== MAC ====
+.DS_Store/
