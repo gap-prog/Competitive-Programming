@@ -200,5 +200,9 @@ hs_err_pid*
 # ==== JetBrains ====
 .idea/
 
-# ==== MAC ====
+# ==== Mac ====
 .DS_Store/
+
+# ==== CMake ====
+CMakeLists.txt
+cmake-build-debug/
