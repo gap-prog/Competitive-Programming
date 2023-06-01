@@ -200,6 +200,10 @@ hs_err_pid*
 # ==== JetBrains ====
 .idea/
 
+# ==== VSCode ====
+
+.vscode/
+
 # ==== Mac ====
 .DS_Store/
 
