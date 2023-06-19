@@ -3,52 +3,40 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+map<string, int> m = {
+    {"Bessie", 0},
+    {"Elsie", 0},
+    {"Daisy", 0},
+    {"Gertie", 0},
+    {"Annabelle", 0},
+    {"Maggie", 0},
+    {"Henrietta", 0},
+};
+
 int main() {
-	freopen("notlast.in", "r", stdin);
-	freopen("notlast.out", "w", stdout);
-	int n;
-	cin >> n;
-	vector<int> v(n);
-	map<string, int> m;
-	m = {
-		{"Bessie", 0},
-		{"Elsie", 0},
-		{"Daisy", 0},
-		{"Gertie", 0},
-		{"Annabelle", 0},
-		{"Maggie", 0},
-		{"Henrietta", 0},
-	};
-	while (n--) {
-		string cow;
-		int milk;
-		cin >> cow >> milk;
-		m[cow] += milk;
-	}
-	int minimum = INT_MAX;
-	for (auto &i: m) {
-		if (i.second < minimum) {
-			minimum = i.second;
-		}
-	}
-	int second_minimum = INT_MAX;
-	for (auto &i: m) {
-		if (i.second > minimum && i.second < second_minimum) {
-			second_minimum = i.second;
-		}
-	}
-	string ans = "";
-	int count = 0;
-	for (auto &i: m) {
-		if (i.second == second_minimum) {
-			count++;
-			ans = i.first;
-		}
-	}
-	if (count == 1) {
-		cout << ans << endl;
-	} else {
-		cout << "Tie";
-	}
-	return 0;
+    ifstream fin("notlast.in");
+    ofstream fout("notlast.out");
+    int n; fin >> n;
+    while (n--) {
+        string cow; fin >> cow;
+        int prod; fin >> prod;
+        m[cow] += prod;
+    }
+    int mn = INT_MAX, smn = INT_MAX;
+    for (auto i: m) {
+        if (i.second < mn) {
+            smn = mn;
+            mn = i.second;
+        } else if (i.second > mn && i.second < smn) smn = i.second;
+    }
+    string ans;
+    int ct = 0;
+    for (auto i: m) {
+        if (i.second == smn) {
+            ans = i.first;
+            ct++;
+        }
+    }
+    fout << (ct == 1 ? ans : "Tie") << '\n';
+    return 0;
 }
