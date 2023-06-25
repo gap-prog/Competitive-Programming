@@ -1,4 +1,31 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <array>
+#include <assert.h>
+#include <bitset>
+#include <complex>
+#include <cstring>
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <math.h>
+#include <numeric>
+#include <queue>
+#include <random>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <tuple>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 
 // #define atcoder 1
@@ -9,10 +36,8 @@ using namespace std;
 
 #define spc " "
 #define nl "\n"
-#define pb push_back
+#define eb emplace_back
 #define mp make_pair
-#define ll long long
-#define lld long long double
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x)
 #define F_OR(i, j, k, l) for (int i=(j); (l) > 0 ? i < (k) : i > (k); i += (l))
@@ -24,6 +49,17 @@ using namespace std;
 #define F_ORC(...) GET5(__VA_ARGS__, F_OR4, F_OR3, F_OR2, F_OR1)
 #define FOR(...) F_ORC(__VA_ARGS__)(__VA_ARGS__)
 #define EACH(i, j) for (auto &i: j)
+
+using ll = long long;
+using ld = long double;
+using int32 = long int;
+using uint32 = unsigned long int;
+using int64 = long long int;
+using uint64 = unsigned long long int;
+
+const int32 BIG = 1e9;
+const int32 SMALL = 1e-9;
+const ld PI = 3.1415926535897932384626433832795;
 
 #ifdef atcoder
     const ll MOD = 998244353
