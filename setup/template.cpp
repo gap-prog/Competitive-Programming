@@ -73,11 +73,11 @@ void setIO(string filename = "") {
     }
 }
 
-ll mod_inv(ll num, ll mod) { return num <= 1 ? num : mod - ( mod / num) * mod_inv(mod % num) % mod; }
+ll mod_inv(ll num, ll mod) { return num <= 1 ? num : mod - ( mod / num) * mod_inv(mod % num, mod) % mod; }
 
 bool is_prime(int num) {
-    for (int d = 2; d * d <= x; d++) if (x % d == 0) return false;
-    return x >= 2;
+    for (int i = 2; i * i <= num; ++i) if (num % i == 0) return false;
+    return num >= 2;
 }
 
 ll binpow(ll base, ll exp) {
