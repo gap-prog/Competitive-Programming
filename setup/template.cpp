@@ -43,13 +43,13 @@ string to_string(const char* c) { return string(c); }
 
 string to_string(vector<bool> v) {
 	string res;
-	for (int i = 0; i < sz(v); ++i) res += char("0" + v[i]);
+	for (int i = 0; i < sz(v); ++i) res += char('0' + v[i]);
 	return res;
 }
 
 template<size_t S> string to_string(bitset<S> b) {
     string res;
-    FOR(S) res += char("0" + b[i]);
+    FOR(S) res += char('0' + b[i]);
     return res;
 }
 
