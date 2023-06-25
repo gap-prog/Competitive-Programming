@@ -23,7 +23,7 @@ using namespace std;
 #define lld long long double
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x)
-#define F_OR(i, j, k, l) for (int i = (j); (l) > 0 ? i < (k) : i > (k) ; i += (l))
+#define F_OR(i, j, k, l) for (int i = (j); (l) > 0 ? i < (k) : i > (k); i += (l))
 #define F_OR1(x) F_OR(i, 0, x, 1)
 #define F_OR2(i, x) F_OR(i, 0, x, 1)
 #define F_OR3(i, y, x) F_OR(i, y, x, 1)
