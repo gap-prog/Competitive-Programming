@@ -91,7 +91,7 @@ def clean(data: list) -> Data:
 
 
 if __name__ == '__main__':
-    file = FILE('template.cpp', 'file.txt')
+    file = FILE('INPUT', 'OUTPUT')
     if file.state['verified']:
         Data.data = clean(file.read())
         file.write(Data.data)
