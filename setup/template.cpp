@@ -4,14 +4,6 @@ using namespace std;
 // #define atcoder 1
 // #define codeforces 1
 
-#ifdef atcoder
-    const ll MOD = 998244353
-#endif
-
-#ifdef codeforces
-    const ll MOD = 1e9 + 7;
-#endif
-
 // #pragma GCC optimize("Ofast")
 // #pragma GCC target("avx2")
 
@@ -23,15 +15,23 @@ using namespace std;
 #define lld long long double
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x)
-#define F_OR(i, j, k, l) for (int i = (j); (l) > 0 ? i < (k) : i > (k); i += (l))
-#define F_OR1(x) F_OR(i, 0, x, 1)
-#define F_OR2(i, x) F_OR(i, 0, x, 1)
-#define F_OR3(i, y, x) F_OR(i, y, x, 1)
-#define F_OR4(i, y, x, z) F_OR(i, y, x, z)
+#define F_OR(i, j, k, l) for (int i=(j); (l) > 0 ? i < (k) : i > (k); i += (l))
+#define F_OR1(j) F_OR(i, 0, j, 1)
+#define F_OR2(i, j) F_OR(i, 0, j, 1)
+#define F_OR3(i, j, k) F_OR(i, j, k, 1)
+#define F_OR4(i, j, k, l) F_OR(i, j, k, l)
 #define GET5(a, b, c, d, e, ...) e
 #define F_ORC(...) GET5(__VA_ARGS__, F_OR4, F_OR3, F_OR2, F_OR1)
 #define FOR(...) F_ORC(__VA_ARGS__)(__VA_ARGS__)
-#define EACH(i, n) for (auto &i: n)
+#define EACH(i, j) for (auto &i: j)
+
+#ifdef atcoder
+    const ll MOD = 998244353
+#endif
+
+#ifdef codeforces
+    const ll MOD = 1e9 + 7;
+#endif
 
 template <class T> int sz(const T &container) { return (int)container.size(); }
 
