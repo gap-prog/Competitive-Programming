@@ -201,7 +201,6 @@ hs_err_pid*
 .idea/
 
 # ==== VSCode ====
-
 .vscode/
 
 # ==== Mac ====
