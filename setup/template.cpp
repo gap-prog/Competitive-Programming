@@ -82,10 +82,14 @@ string to_string(bool b) { return b ? "true" : "false"; }
 string to_string(const char* c) { return string(c); }
 
 string to_string(vector<bool> v) {
-	string res;
-	for (int i = 0; i < sz(v); ++i) res += char('0' + v[i]);
-	return res;
+    string res;
+    for (int i = 0; i < sz(v); ++i) res += char('0' + v[i]);
+    return res;
 }
+
+int choi(char c) { return ((int) (c - '0')); }
+
+char iohc(int i) { return ((char) (i + '0')); }
 
 template<size_t S> string to_string(bitset<S> b) {
     string res;
