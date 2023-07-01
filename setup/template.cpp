@@ -63,18 +63,14 @@ using uint64 = unsigned long long int;
 const int32 BIG = 1e9, SMALL = 1e-9;
 const ld PI = 3.1415926535897932384626433832795;
 
-const string yes, no;
-
 #ifdef atcoder
     const ll MOD = 998244353;
-    yes = "Yes\n";
-    no = "No\n";
+    const string yes = "Yes\n", no = "No\n";
 #endif
 
 #ifdef codeforces
     const ll MOD = 1e9 + 7;
-    yes = "YES\n";
-    no = "NO\n";
+    const string yes = "YES\n", no = "NO\n";
 #endif
 
 template <class T> int sz(const T &container) { return (int)container.size(); }
