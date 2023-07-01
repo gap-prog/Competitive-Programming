@@ -1,4 +1,4 @@
-// <judge> Problem Link:
+// AtCoder Problem Link: https://atcoder.jp/contests/code-festival-2016-qualb/tasks/codefestival_2016_qualB_b
 
 #include <algorithm>
 #include <array>
