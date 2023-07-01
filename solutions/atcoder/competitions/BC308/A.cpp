@@ -1,4 +1,4 @@
-// <judge> Problem Link:
+// AtCoder Problem Link: https://atcoder.jp/contests/abc308/tasks/abc308_a
 
 #include <algorithm>
 #include <array>
@@ -31,7 +31,7 @@
 #include <vector>
 using namespace std;
 
-// #define atcoder 1
+#define atcoder 1
 // #define codeforces 1
 
 // #pragma GCC optimize("Ofast")
