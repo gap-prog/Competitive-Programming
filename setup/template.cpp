@@ -5,6 +5,7 @@
 #include <assert.h>
 #include <bitset>
 #include <complex>
+#include <cstdint>
 #include <cstring>
 #include <deque>
 #include <functional>
