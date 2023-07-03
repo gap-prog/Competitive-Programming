@@ -1,55 +1,39 @@
 // USACO Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=644
 
-// Editorial Link: https://github.com/gap-prog/Competitive-Programming/blob/main/tutorials/usaco/silver/closing_the_farm.pdf
-
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAX = 3001;
-int n, m, b1, b2, b, ans;
-vector<int> adj[MAX];
-bool visited[MAX], done[MAX];
+const int MAXN = 3001;
+
+int N, M;
+vector<int> adj[MAXN];
+bool visited[MAXN], closed[MAXN];
 
 void dfs(int node) {
-    visited[node] = true;
-    for (int &i: adj[node]) {
-        if (!done[i] && !visited[i]) {
-            dfs(i);
-        }
-    }
-}
-
-void connected() {
-    ans = 0;
-    for (int i = 1; i <= n; ++i) {
-        if (!done[i] && !visited[i]) {
-            dfs(i);
-            ans++;
-        }
-    }
-    if (ans > 1) {
-        cout << "NO" << endl;
-    } else {
-        cout << "YES" << endl;
-    }
+  visited[node] = true;
+  for (int &i: adj[node]) if (!visited[i] && !closed[i]) dfs(i);
 }
 
 int main() {
-    freopen("closing.in", "r", stdin);
-    freopen("closing.out", "w", stdout);
-    cin >> n >> m;
-    for (int i = 0; i < m; ++i) {
-        cin >> b1 >> b2;
-        adj[b1].push_back(b2);
-        adj[b2].push_back(b1);
+  ifstream fin("closing.in");
+  ofstream fout("closing.out");
+  fin >> N >> M;
+  for (int i = 0; i < M; ++i) {
+    int barn1, barn2; fin >> barn1 >> barn2;
+    adj[barn1].emplace_back(barn2);
+    adj[barn2].emplace_back(barn1);
+  }
+  for (int i = 0; i < N; ++i) {
+    int ct = 0;
+    for (int i = 1; i <= N; ++i) {
+      if (!visited[i] && !closed[i]) {
+        dfs(i);
+        ct++;
+      }
     }
-    for (int i = 0; i < n; ++i) {
-        connected();
-        cin >> b;
-        done[b] = true;
-        for (int i = 1; i <= n; ++i) {
-            visited[i] = false;
-        }
-    }
-    return 0;
+    fout << (ct > 1 ? "NO\n" : "YES\n");
+    int barn; fin >> barn;
+    closed[barn] = true;
+    fill(begin(visited), end(visited), false);
+  }
 }
