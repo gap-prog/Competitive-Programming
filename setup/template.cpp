@@ -76,6 +76,11 @@ const ld PI = 3.1415926535897932384626433832795;
 
 template <class T> int sz(const T &container) { return (int)container.size(); }
 
+template <typename T> int index(const vector<T> &v, const T &n) {
+    FOR(i, sz(v)) if (v[i] == n) return i;
+    return -1;
+}
+
 string to_string(char c) { return string(1, c); }
 
 string to_string(bool b) { return b ? "true" : "false"; }
