@@ -4,36 +4,20 @@
 using namespace std;
 
 int main() {
-	freopen("cownomics.in", "r", stdin);
-	freopen("cownomics.out", "w", stdout);
-	int n, m;
-	cin >> n >> m;
-	vector<vector<char>> s(n, vector<char>(m));
-	vector<vector<char>> p(n, vector<char>(m));
-	for (int i = 0; i < n; ++i) {
-		for (int j = 0; j < m; ++j) {
-			cin >> s[i][j];
-		}
-	}
-	for (int i = 0; i < n; ++i) {
-		for (int j = 0; j < m; ++j) {
-			cin >> p[i][j];
-		}
-	}
-	int indx = 0;
-	for (int i = 0; i < m; ++i) {
-		bool d = false;
-		for (int j = 0; j < n; ++j) {
-			for (int k = 0; k < n; ++k) {
-				if (s[j][i] == p[k][i]) {
-					d = true;
-					break;
-				}
-			}
-		}
-		if (!d) {
-			indx++;
-		}
-	}
-	cout << indx << endl;
+  ifstream fin("cownomics.in");
+  ofstream fout("cownomics.out");
+  int n, m; fin >> n >> m;
+  vector<vector<char>> spotted(n, vector<char>(m)), plain(n, vector<char>(m));
+  for (vector<char> &i: spotted) for (char &j: i) fin >> j;
+  for (vector<char> &i: plain) for (char &j: i) fin >> j;
+  int ans = 0;
+  for (int i = 0; i < m; ++i) {
+    map<char, int> mp;
+    for (int j = 0; j < n; ++j) mp[plain[j][i]]++;
+    bool flag = true;
+    for (int j = 0; j < n; ++j) if (mp[spotted[j][i]] > 0) { flag = false; break; }
+    ans += flag;
+  }
+  fout << ans << '\n';
+  return 0;
 }
