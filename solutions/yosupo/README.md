@@ -1,3 +1,0 @@
-# Yosupo
-
-Yosupo problem solutions
