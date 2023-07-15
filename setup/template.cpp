@@ -44,6 +44,8 @@ using namespace std;
 #define mp make_pair
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x)
+#define lb(x, bound) lower_bound(all(x), bound)
+#define ub(x, bound) upper_bound(all(x), bound)
 #define F_OR(i, j, k, l) for (int i=(j); (l) > 0 ? i < (k) : i > (k); i += (l))
 #define F_OR1(j) F_OR(i, 0, j, 1)
 #define F_OR2(i, j) F_OR(i, 0, j, 1)
