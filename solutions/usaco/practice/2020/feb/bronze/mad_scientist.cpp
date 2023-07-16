@@ -4,24 +4,12 @@
 using namespace std;
 
 int main() {
-    freopen("breedflip.in", "r", stdin);
-    freopen("breedflip.out", "w", stdout);
-    int n;
-    cin >> n;
-    string s1, s2;
-    cin >> s1 >> s2;
-    int ans = 0;
-    bool wrong = false;
-    for (int i = 0; i < n; ++i) {
-        if (s1[i] != s2[i]) {
-            if (!wrong) {
-                wrong = true;
-                ans++;
-            }
-        } else {
-            wrong = false;
-        }
-    }
-    cout << ans << endl;
-    return 0;
+  ifstream fin("breedflip.in");
+  ofstream fout("breedflip.out");
+  int n; fin >> n;
+  string a, b; fin >> a >> b;
+  int ans = 0;
+  for (int i = 0; i < n - 1; ++i) if (a[i] != b[i] && a[i + 1] == b[i + 1]) ans++;
+  fout << ans << '\n';
+  return 0;
 }
