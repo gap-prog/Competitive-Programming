@@ -4,7 +4,6 @@
 #include <array>
 #include <assert.h>
 #include <bitset>
-#include <climits>
 #include <complex>
 #include <cstdint>
 #include <cstring>
@@ -110,9 +109,9 @@ template<class T> string to_string(T v) {
   bool f = 1;
   string res;
   EACH(x, v) {
-    if(!f) res += spc;
-    f = 0;
-    res += to_string(x);
+      if(!f) res += spc;
+      f = 0;
+      res += to_string(x);
   }
   return res;
 }
@@ -121,8 +120,8 @@ void setIO(string filename = "") {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
   if (sz(filename)) {
-    freopen((filename + ".in").c_str(), "r", stdin);
-    freopen((filename + ".out").c_str(), "w", stdout);
+      freopen((filename + ".in").c_str(), "r", stdin);
+      freopen((filename + ".out").c_str(), "w", stdout);
   }
 }
 
@@ -136,9 +135,9 @@ bool is_prime(int num) {
 ll binpow(ll base, ll exp) {
   ll ret = 1;
   while (exp > 0) {
-    if (exp & 1) ret *= base;
-    base *= base;
-    exp >>= 1;
+      if (exp & 1) ret *= base;
+      base *= base;
+      exp >>= 1;
   }
   return ret;
 }
