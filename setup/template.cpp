@@ -67,20 +67,20 @@ const int32 BIG = 1e9, SMALL = 1e-9;
 const ld PI = 3.1415926535897932384626433832795;
 
 #ifdef atcoder
-    const ll MOD = 998244353;
-    const string yes = "Yes\n", no = "No\n";
+  const ll MOD = 998244353;
+  const string yes = "Yes\n", no = "No\n";
 #endif
 
 #ifdef codeforces
-    const ll MOD = 1e9 + 7;
-    const string yes = "YES\n", no = "NO\n";
+  const ll MOD = 1e9 + 7;
+  const string yes = "YES\n", no = "NO\n";
 #endif
 
 template <class T> int sz(const T &container) { return (int)container.size(); }
 
 template <typename T> int index(const vector<T> &v, const T &n) {
-    FOR(i, sz(v)) if (v[i] == n) return i;
-    return -1;
+  FOR(i, sz(v)) if (v[i] == n) return i;
+  return -1;
 }
 
 string to_string(char c) { return string(1, c); }
@@ -90,9 +90,9 @@ string to_string(bool b) { return b ? "true" : "false"; }
 string to_string(const char* c) { return string(c); }
 
 string to_string(vector<bool> v) {
-    string res;
-    for (int i = 0; i < sz(v); ++i) res += char('0' + v[i]);
-    return res;
+  string res;
+  for (int i = 0; i < sz(v); ++i) res += char('0' + v[i]);
+  return res;
 }
 
 int choi(char c) { return ((int) (c - '0')); }
@@ -100,56 +100,56 @@ int choi(char c) { return ((int) (c - '0')); }
 char iohc(int i) { return ((char) (i + '0')); }
 
 template<size_t S> string to_string(bitset<S> b) {
-    string res;
-    FOR(S) res += char('0' + b[i]);
-    return res;
+  string res;
+  FOR(S) res += char('0' + b[i]);
+  return res;
 }
 
 template<class T> string to_string(T v) {
-    bool f = 1;
-    string res;
-    EACH(x, v) {
-        if(!f) res += spc;
-        f = 0;
-        res += to_string(x);
-    }
-    return res;
+  bool f = 1;
+  string res;
+  EACH(x, v) {
+      if(!f) res += spc;
+      f = 0;
+      res += to_string(x);
+  }
+  return res;
 }
 
 void setIO(string filename = "") {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    if (sz(filename)) {
-        freopen((filename + ".in").c_str(), "r", stdin);
-        freopen((filename + ".out").c_str(), "w", stdout);
-    }
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+  if (sz(filename)) {
+      freopen((filename + ".in").c_str(), "r", stdin);
+      freopen((filename + ".out").c_str(), "w", stdout);
+  }
 }
 
 ll mod_inv(ll num, ll mod) { return num <= 1 ? num : mod - ( mod / num) * mod_inv(mod % num, mod) % mod; }
 
 bool is_prime(int num) {
-    for (int i = 2; i * i <= num; ++i) if (num % i == 0) return false;
-    return num >= 2;
+  for (int i = 2; i * i <= num; ++i) if (num % i == 0) return false;
+  return num >= 2;
 }
 
 ll binpow(ll base, ll exp) {
-    ll ret = 1;
-    while (exp > 0) {
-        if (exp & 1) ret *= base;
-        base *= base;
-        exp >>= 1;
-    }
-    return ret;
+  ll ret = 1;
+  while (exp > 0) {
+      if (exp & 1) ret *= base;
+      base *= base;
+      exp >>= 1;
+  }
+  return ret;
 }
 
 void solve() {
-    // solve
+  // solve
 }
 
 int main() {
-    setIO();
-    int t = 1;
-    // cin >> t;
-    while (t--) solve();
-    return 0;
+  setIO();
+  int t = 1;
+  // cin >> t;
+  while (t--) solve();
+  return 0;
 }
