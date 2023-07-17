@@ -42,8 +42,8 @@ using namespace std;
 #define nl "\n"
 #define eb emplace_back
 #define mp make_pair
-#define all(x) begin(x), end(x)
-#define rall(x) rbegin(x), rend(x)
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
 #define lb(x, bound) lower_bound(all(x), bound)
 #define ub(x, bound) upper_bound(all(x), bound)
 #define F_OR(i, j, k, l) for (int i=(j); (l) > 0 ? i < (k) : i > (k); i += (l))
