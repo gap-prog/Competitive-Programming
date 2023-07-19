@@ -2,39 +2,36 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
+
+void solve() {
+  ll n; cin >> n;
+  vector<ll> a(n);
+  ll sum = 0;
+  for (int i = 0; i < n; ++i) {
+    cin >> a[i];
+    sum += a[i];
+  }
+  for (int i = 0; i <= sum; ++i) {
+    if (i != 0 && sum % i != 0) continue;
+    ll curr = 0;
+    bool flag = true;
+    for (ll &j: a) {
+      curr += j;
+      if (curr > i) {
+        flag = false;
+        break;
+      } else if (curr == i) curr = 0;
+    }
+    if (flag) {
+      cout << (i == 0 ? 0 : (n - (sum / i))) << '\n';
+      return;
+    }
+  }
+}
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        vector<int> v(n);
-        int sum = 0;
-        for (auto &i: v) {
-            cin >> i;
-            sum += i;
-        }
-        for (int i = n; i >= 1; --i) {
-            if (sum % i == 0) {
-                int t_sum = sum / i, cur_sum = 0;
-                bool check = true;
-                for (int i = 0; i < n; ++i) {
-                    cur_sum += v[i];
-                    if (cur_sum > t_sum) {
-                        check = false;
-                        break;
-                    }
-                    if (cur_sum == t_sum) {
-                        cur_sum = 0;
-                    }
-                }
-                if (check) {
-                    cout << n - i << endl;
-                    break;
-                }
-            }
-        }
-    }
-    return 0;
+  int t; cin >> t;
+  while (t--) solve();
+  return 0;
 }
