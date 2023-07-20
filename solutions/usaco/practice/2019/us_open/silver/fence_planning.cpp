@@ -2,17 +2,22 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define sz(x) (int) x.size()
 
 const int N = 1e5 + 1;
 
+vector<int> x(N), y(N), adj[N];
 vector<bool> visited(N);
-vector<vector<int>> components;
-vector<int> x(N), y(N), adj[N], current;
+
+array<int, 4> arr = {INT_MAX, 0, INT_MAX, 0};
+
+int ans = INT_MAX;
 
 void dfs(int node) {
   visited[node] = true;
-  current.emplace_back(node);
+  arr[0] = min(arr[0], x[node]);
+  arr[1] = max(arr[1], x[node]);
+  arr[2] = min(arr[2], y[node]);
+  arr[3] = max(arr[3], y[node]);
   for (int &i: adj[node]) if (!visited[i]) dfs(i);
 }
 
@@ -28,21 +33,10 @@ int main() {
   }
   for (int i = 1; i <= n; ++i) {
     if (!visited[i]) {
-      current.clear();
+      arr = {INT_MAX, 0, INT_MAX, 0};
       dfs(i);
-      components.emplace_back(current);
+      ans = min(ans, 2 * (arr[1] - arr[0]) + 2 * (arr[3] - arr[2]));
     }
-  }
-  int ans = INT_MAX;
-  for (vector<int> &i: components) {
-    int minx = INT_MAX, maxx = 0, miny = INT_MAX, maxy = 0;
-    for (int j = 0; j < sz(i); ++j) {
-      minx = min(minx, x[i[j]]);
-      maxx = max(maxx, x[i[j]]);
-      miny = min(miny, y[i[j]]);
-      maxy = max(maxy, y[i[j]]);
-    }
-    ans = min(ans, 2 * (maxx - minx) + 2 * (maxy - miny));
   }
   fout << ans << '\n';
   return 0;
