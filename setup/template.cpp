@@ -62,12 +62,12 @@ using int32 = long int;
 using uint32 = unsigned long int;
 using int64 = long long int;
 using uint64 = unsigned long long int;
-#define int128 __int128_t
+using int128 = __int128_t;
 
 const int32 BIG = 1e9, SMALL = -1e9;
 // const int32 BIGGER = 2e9, SMALLER = -2e9;
-const int32 INT_MAX = 2147483647, INT_MIN = -2147483647;
-// const int64 INT64_MAX = 9223372036854775807, INT64_MIN = -9223372036854775807
+const int32 MAX32 = 2147483647, MIN32 = -2147483647;
+// const int64 MAX64 = 9223372036854775807, MIN64 = -9223372036854775807;
 const ld PI = 3.1415926535897932384626433832795;
 
 #ifdef atcoder
