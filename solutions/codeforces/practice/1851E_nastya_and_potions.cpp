@@ -2,13 +2,19 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
+using ll = long long;
 
 const int MAX = 2e5;
 
 vector<int> adj[MAX];
 vector<bool> visited(MAX);
 vector<ll> c(MAX), cost(MAX);
+
+void clr(int num) {
+  for (int i = 0; i < num; ++i) adj[i].clear();
+  fill(visited.begin(), visited.end(), false);
+  fill(cost.begin(), cost.end(), 0);
+}
 
 void dfs(int node) {
   if ((int) adj[node].size() == 0) {
@@ -25,6 +31,7 @@ void dfs(int node) {
 
 void solve() {
   int n, k; cin >> n >> k;
+  clr(n);
   for (int i = 0; i < n; ++i) cin >> c[i];
   for (int i = 0; i < k; ++i) {
     int p; cin >> p; p--;
@@ -44,11 +51,6 @@ void solve() {
 
 int main() {
   int t; cin >> t;
-  while (t--) {
-    fill(c.begin(), c.end(), 0);
-    fill(cost.begin(), cost.end(), 0);
-    fill(visited.begin(), visited.end(), false);
-    solve();
-  }
+  while (t--) solve();
   return 0;
 }
