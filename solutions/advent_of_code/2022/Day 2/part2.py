@@ -1,4 +1,4 @@
-# Advent of Code Problem Link: https://adventofcode.com/2022/day/2#part2
+# Advent of Code Problem Link: https://adventofcode.com/2022/day/2
 
 with open('input.txt', 'r') as file:
   inpt = file.readlines()
