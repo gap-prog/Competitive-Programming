@@ -1,4 +1,4 @@
-// CodeForces Problem Link: https://atcoder.jp/contests/abc312/tasks/abc312_a
+// AtCoder Problem Link: https://atcoder.jp/contests/abc312/tasks/abc312_a
 
 #include <bits/stdc++.h>
 using namespace std;
